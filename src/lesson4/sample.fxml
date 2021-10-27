@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:controller="lesson4.Controller" xmlns:fx="http://javafx.com/fxml" alignment="center">
+    <TextArea VBox.vgrow="ALWAYS" maxHeight="200" editable="false"
+              fx:id="area" wrapText="true" />
+    <FlowPane alignment="BASELINE_CENTER">
+        <TextField fx:id="field" onAction="#enterAction" minHeight="35"
+                   minWidth="200"/>
+        <Button text="Отправить" onAction="#clickAction" minHeight="35"
+                minWidth="75"/>
+    </FlowPane>
+</VBox>
